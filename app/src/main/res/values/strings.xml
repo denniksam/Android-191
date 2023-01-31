@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Basics</string>
-    <string name="tv_hello_text">Hello World!!!</string>
-    <string name="btn_add_text">Add exclamation</string>
+    <string name="tv_hello_text">Android Basics</string>
+    <string name="btn_calc_text">Calculator</string>
+    <string name="btn_exit_text">Exit App</string>
 </resources>
