@@ -34,4 +34,6 @@
     <string name="btn_calc_7">7</string>
     <string name="btn_calc_8">8</string>
     <string name="btn_calc_9">9</string>
+
+    <string name="minus_sign">\u2212</string>
 </resources>
