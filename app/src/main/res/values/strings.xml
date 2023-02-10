@@ -3,6 +3,9 @@
     <!-- Start Activity -->
     <string name="tv_hello_text">Android Basics</string>
 
+    <!-- Game 2048 -->
+    <string name="btn_2048_text">Game 2048</string>
+
     <!-- Calculator -->
     <string name="btn_calc_text">Calculator</string>
     <string name="btn_exit_text">Exit App</string>
@@ -36,4 +39,5 @@
     <string name="btn_calc_9">9</string>
 
     <string name="minus_sign">\u2212</string>
+    <string name="calc_divide_zero_msg">Cannot divide by zero</string>
 </resources>

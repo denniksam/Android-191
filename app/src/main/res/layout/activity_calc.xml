@@ -170,7 +170,7 @@
                 style="@style/ButtonDigit"
                 android:text="@string/btn_calc_comma"/>
             <Button
-                android:id="@+id/btnSum"
+                android:id="@+id/btnEqual"
                 style="@style/ButtonEqual"
                 android:text="@string/btn_calc_sum"/>
         </TableRow>
