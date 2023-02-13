@@ -66,97 +66,41 @@
             android:layout_weight="1"
             android:layout_width="match_parent">
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:textSize="50sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#81766A"
-                android:background="#BFAFA0"
+                android:id="@+id/cell00"
+                style="@style/Cell_0"
                 tools:text=""/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:textSize="50sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#81766A"
-                android:background="#ECE2CA"
+                android:id="@+id/cell01"
+                style="@style/Cell_2"
                 tools:text="2"/>
             <TextView
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_margin="5dp"
-            android:textSize="50sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:textColor="#81766A"
-            android:background="#EDE1C8"
-            tools:text="4"/>
+                android:id="@+id/cell02"
+                style="@style/Cell_4"
+                tools:text="4"/>
             <TextView
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_margin="5dp"
-            android:textSize="50sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:textColor="#FEF1DF"
-            android:background="#F3B27F"
-            tools:text="8"/>
+                android:id="@+id/cell03"
+                style="@style/Cell_8"
+                tools:text="8"/>
         </TableRow>
         <TableRow
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_width="match_parent">
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:textSize="50sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#F9F5EF"
-                android:background="#F69D6C"
+                android:id="@+id/cell10"
+                style="@style/Cell_16"
                 tools:text="16"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:textSize="50sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#81766A"
-                android:background="#ECE2CA"
+                android:id="@+id/cell11"
+                style="@style/Cell_16"
                 tools:text="32"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:textSize="50sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#81766A"
-                android:background="#ECE2CA"
+                android:id="@+id/cell12"
+                style="@style/Cell_16"
                 tools:text="64"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:textSize="50sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#81766A"
-                android:background="#ECE2CA"
+                android:id="@+id/cell13"
+                style="@style/Cell_16"
                 tools:text="128"/>
         </TableRow>
         <TableRow
@@ -164,98 +108,42 @@
             android:layout_weight="1"
             android:layout_width="match_parent">
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:textSize="50sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#81766A"
-                android:background="#ECE2CA"
-                tools:text="256"/>
+                android:id="@+id/cell20"
+                style="@style/Cell_16"
+                tools:text="16"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:textSize="50sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#81766A"
-                android:background="#ECE2CA"
-                tools:text="512"/>
+                android:id="@+id/cell21"
+                style="@style/Cell_16"
+                tools:text="16"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:textSize="35sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#81766A"
-                android:background="#ECE2CA"
-                tools:text="1024"/>
+                android:id="@+id/cell22"
+                style="@style/Cell_16"
+                tools:text="16"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:textSize="35sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#81766A"
-                android:background="#ECE2CA"
-                tools:text="2048"/>
+                android:id="@+id/cell23"
+                style="@style/Cell_16"
+                tools:text="16"/>
         </TableRow>
         <TableRow
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_width="match_parent">
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:textSize="35sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#81766A"
-                android:background="#ECE2CA"
-                tools:text="4096"/>
+                android:id="@+id/cell30"
+                style="@style/Cell_16"
+                tools:text="16"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:textSize="35sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#81766A"
-                android:background="#ECE2CA"
-                tools:text="8192"/>
+                android:id="@+id/cell31"
+                style="@style/Cell_16"
+                tools:text="16"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#81766A"
-                android:background="#ECE2CA"
-                tools:text="16384"/>
+                android:id="@+id/cell32"
+                style="@style/Cell_16"
+                tools:text="16"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#81766A"
-                android:background="#ECE2CA"
-                tools:text="32768"/>
+                android:id="@+id/cell33"
+                style="@style/Cell_16"
+                tools:text="16"/>
         </TableRow>
     </TableLayout>
 

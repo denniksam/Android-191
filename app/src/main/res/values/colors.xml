@@ -8,6 +8,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!-- 2048 -->
+    <color name="game_bg_0">#BFAFA0</color>
+    <color name="game_bg_2">#ECE2CA</color>
+    <color name="game_bg_4">#EDE1C8</color>
+    <color name="game_bg_8">#F3B27F</color>
+    <color name="game_bg_16">#F69D6C</color>
+
+    <!-- Calc -->
     <color name="calc_history_text">#A0A0A0</color>
     <color name="calc_result_text">#FBFBFB</color>
 

@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- ============= 2048 =========== -->
+    <style name="CellBase" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Cell_0" parent="CellBase">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">@color/game_bg_0</item>
+        <item name="android:background">@color/game_bg_0</item>
+    </style>
+    <style name="Cell_2" parent="CellBase">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">#81766A</item>
+        <item name="android:background">@color/game_bg_2</item>
+    </style>
+    <style name="Cell_4" parent="CellBase">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">#81766A</item>
+        <item name="android:background">@color/game_bg_4</item>
+    </style>
+    <style name="Cell_8" parent="CellBase">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">#FEF1DF</item>
+        <item name="android:background">@color/game_bg_8</item>
+    </style>
+    <style name="Cell_16" parent="CellBase">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">#F9F5EF</item>
+        <item name="android:background">@color/game_bg_16</item>
+    </style>
+
+
+    <!-- ============= Calc =========== -->
     <style name="ButtonBase" parent="TextAppearance.AppCompat">
         <item name="android:layout_margin">4dp</item>
         <item name="android:layout_weight">1</item>
