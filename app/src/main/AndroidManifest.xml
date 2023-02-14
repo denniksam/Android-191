@@ -16,6 +16,7 @@
         <activity
             android:name=".Game2048Activity"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".CalcActivity"

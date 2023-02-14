@@ -5,6 +5,8 @@
 
     <!-- Game 2048 -->
     <string name="btn_2048_text">Game 2048</string>
+    <string name="score_text">Score\n%d</string>
+    <string name="best_score_text">Best\n%d</string>
 
     <!-- Calculator -->
     <string name="btn_calc_text">Calculator</string>
