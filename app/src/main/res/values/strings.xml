@@ -3,6 +3,10 @@
     <!-- Start Activity -->
     <string name="tv_hello_text">Android Basics</string>
 
+    <!-- Currency rates -->
+    <string name="rates_text">Currency rates</string>
+    <string name="rates_title">Currency rates</string>
+
     <!-- Game 2048 -->
     <string name="btn_2048_text">Game 2048</string>
     <string name="score_text">Score\n%d</string>
