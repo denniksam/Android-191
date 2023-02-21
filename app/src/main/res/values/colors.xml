@@ -8,6 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!-- Rates -->
+    <color name="rate_bg_color">#F3C7C7</color>
+    <color name="rate_bg_odd_color">#C7D1F3</color>
+
     <!-- 2048 -->
     <color name="game_bg_0">#BFAFA0</color>
     <color name="game_bg_2">#ECE2CA</color>

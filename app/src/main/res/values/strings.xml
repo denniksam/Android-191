@@ -2,18 +2,25 @@
     <string name="app_name">Basics</string>
     <!-- Start Activity -->
     <string name="tv_hello_text">Android Basics</string>
+    <string name="chat_text">Chat</string>
+    <string name="rates_text">Currency rates</string>
+    <string name="btn_2048_text">Game 2048</string>
+    <string name="btn_calc_text">Calculator</string>
+
+    <!-- Chat -->
+    <string name="chat_name_title">User name:</string>
+    <string name="chat_default_user">DNS</string>
+    <string name="chat_message_title">Msg:</string>
+    <string name="chat_default_message">Hello, All!</string>
 
     <!-- Currency rates -->
-    <string name="rates_text">Currency rates</string>
     <string name="rates_title">Currency rates</string>
 
     <!-- Game 2048 -->
-    <string name="btn_2048_text">Game 2048</string>
     <string name="score_text">Score\n%d</string>
     <string name="best_score_text">Best\n%d</string>
 
     <!-- Calculator -->
-    <string name="btn_calc_text">Calculator</string>
     <string name="btn_exit_text">Exit App</string>
     <string name="btn_calc_history">77 - 88 =</string>
     <string name="btn_calc_result">-11</string>

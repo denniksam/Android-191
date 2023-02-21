@@ -24,8 +24,13 @@ public class MainActivity extends AppCompatActivity {
                 .setOnClickListener( this::game2048ButtonClick ) ;
         findViewById( R.id.ratesButton )
                 .setOnClickListener( this::ratesButtonClick ) ;
+        findViewById( R.id.chatButton )
+                .setOnClickListener( this::chatButtonClick ) ;
     }
-
+    private void chatButtonClick( View v ) {
+        Intent intent = new Intent( this, ChatActivity.class ) ;
+        startActivity( intent ) ;
+    }
     private void ratesButtonClick( View v ) {
         Intent intent = new Intent( this, RatesActivity.class ) ;
         startActivity( intent ) ;

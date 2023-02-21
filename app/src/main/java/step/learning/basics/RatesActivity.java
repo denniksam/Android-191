@@ -1,9 +1,13 @@
 package step.learning.basics;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.content.res.AppCompatResources;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -67,7 +71,8 @@ public class RatesActivity extends AppCompatActivity {
             for( int i = 0; i < jRates.length(); ++i ) {
                 rates.add( new Rate( jRates.getJSONObject(i) ) ) ;
             }
-            new Thread( this::showRates ).start() ;
+            // new Thread( this::showRates ).start() ;
+            runOnUiThread( this::showRates ) ;
         }
         catch( JSONException ex ) {
             Log.d( "parseContent()", ex.getMessage() ) ;
@@ -75,6 +80,43 @@ public class RatesActivity extends AppCompatActivity {
     }
 
     private void showRates() {   // отобразить ORM-массив this.rates
+        LinearLayout container = findViewById( R.id.ratesContainer ) ;
+
+        // Создаем TextView, стилизуем его, добавляем в ratesContainer (LinearLayout)
+        Drawable ratesBg = AppCompatResources.getDrawable(
+                getApplicationContext(), R.drawable.rates_bg ) ;
+        Drawable oddRatesBg = AppCompatResources.getDrawable(
+                getApplicationContext(), R.drawable.rates_bg_odd ) ;
+
+        // Установка внешних отступов (Margin) реализуется через параметры контейнера
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT ) ;
+        layoutParams.setMargins( 7, 5, 7, 5 ) ;
+        LinearLayout.LayoutParams oddLayoutParams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT ) ;
+        oddLayoutParams.setMargins( 7, 5, 7, 5 ) ;
+        oddLayoutParams.gravity = Gravity.END ;
+
+        boolean isOdd = true ;
+        for( Rate rate : this.rates ) {
+            TextView tv = new TextView( this ) ;
+            tv.setText( rate.getTxt() + "\n" + rate.getCc() + " " + rate.getRate() ) ;
+            isOdd = !isOdd;
+            if( isOdd ) {
+                tv.setBackground(oddRatesBg);
+                tv.setLayoutParams( oddLayoutParams ) ;  // путь к setMargins
+            }
+            else {
+                tv.setBackground(ratesBg);
+                tv.setLayoutParams( layoutParams ) ;  // путь к setMargins
+            }
+            tv.setPadding(7, 5, 7, 5);
+            container.addView( tv ) ;
+        }
+    }
+    private void showRatesTxt() {   // отобразить ORM-массив this.rates
         // tvJson.setText( content ) нельзя - обращение из другого потока
         // runOnUiThread( () -> tvJson.setText( content ) ) ;
         // Д.З. Реализовать отображение ORM-массива this.rates на интерфейсе устройства
